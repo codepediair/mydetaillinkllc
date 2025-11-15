@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { Logo } from "@/components/logo";
-import { ArrowRight, Menu, Rocket, X } from "lucide-react";
+import { ArrowRight, Rocket} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { InfiniteSlider } from '@/components/motion-primitives/infinite-slider';
@@ -25,30 +24,27 @@ export default function Hero() {
                   <span className="bg-muted rounded-[calc(var(--radius)-0.25rem)] px-2 py-1 text-xs">
                     New
                   </span>
-                  <span className="text-sm">Introduction Tailark Html</span>
+                  <span className="text-sm">Start Your Car's Transformation</span>
                   <span className="bg-(--color-border) block h-4 w-px"></span>
 
                   <ArrowRight className="size-4" />
                 </Link>
 
                 <h1 className="mt-8 text-balance text-4xl font-semibold md:text-5xl xl:text-6xl xl:leading-[1.125]">
-                  Modern Software testing reimagined
+                  Fall in Love with Your Car, All Over Again.
                 </h1>
                 <p className="mx-auto mt-8 hidden max-w-2xl text-wrap text-lg sm:block">
-                  Tailwindcss highly customizable components for building modern
-                  websites and applications that look and feel the way you mean
-                  it.
+                  Remember that showroom feeling? We bring it back. Our expert detailing revives every curve and surface, delivering an unmatched, head-turning shine and protection.
                 </p>
                 <p className="mx-auto mt-6 max-w-2xl text-wrap sm:hidden">
-                  Highly customizable components for building modern websites
-                  and applications, with your personal spark.
+                  At [detaillink]: We specialize in paint correction and ceramic coating, transforming your vehicle beyond the showroom. Your car's ultimate shine awaits.
                 </p>
 
                 <div className="mt-8">
                   <Button size="lg" asChild>
                     <Link href="#">
                       <Rocket className="relative size-4" />
-                      <span className="text-nowrap">Start Building</span>
+                      <span className="text-nowrap">booking Now</span>
                     </Link>
                   </Button>
                 </div>
