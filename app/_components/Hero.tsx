@@ -24,7 +24,7 @@ export default function Hero() {
                   <span className="bg-muted rounded-[calc(var(--radius)-0.25rem)] px-2 py-1 text-xs">
                     New
                   </span>
-                  <span className="text-sm">Start Your Car's Transformation</span>
+                  <span className="text-sm">Start Your Car&apos;s Transformation</span>
                   <span className="bg-(--color-border) block h-4 w-px"></span>
 
                   <ArrowRight className="size-4" />
@@ -37,7 +37,7 @@ export default function Hero() {
                   Remember that showroom feeling? We bring it back. Our expert detailing revives every curve and surface, delivering an unmatched, head-turning shine and protection.
                 </p>
                 <p className="mx-auto mt-6 max-w-2xl text-wrap sm:hidden">
-                  At [detaillink]: We specialize in paint correction and ceramic coating, transforming your vehicle beyond the showroom. Your car's ultimate shine awaits.
+                  At [detaillink]: We specialize in paint correction and ceramic coating, transforming your vehicle beyond the showroom. Your car&apos;s ultimate shine awaits.
                 </p>
 
                 <div className="mt-8">
