@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Barlow, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "./_components/Navbar";
 
 const barlowSans = Barlow({
   
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body
         className={`${barlowSans.className} ${geistMono.variable} antialiased`}
       >
+        <Navbar/>
         {children}
       </body>
     </html>
