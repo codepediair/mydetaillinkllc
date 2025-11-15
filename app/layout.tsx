@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Barlow, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./_components/Navbar";
+import Footer from "./_components/Footer";
 
 const barlowSans = Barlow({
   
@@ -31,6 +32,7 @@ export default function RootLayout({
       >
         <Navbar/>
         {children}
+        <Footer />
       </body>
     </html>
   );

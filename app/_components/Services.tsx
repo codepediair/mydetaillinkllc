@@ -1,6 +1,6 @@
 'use client'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
-import { ChartBarIncreasingIcon, Database, Fingerprint, IdCard } from 'lucide-react'
+import { Amphora, Eye, Lightbulb, PaintBucket} from 'lucide-react'
 import Image from 'next/image'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
@@ -12,19 +12,19 @@ export default function Services() {
 
     const images = {
         'item-1': {
-            image: '/charts.png',
+            image: 'https://images.pexels.com/photos/6969026/pexels-photo-6969026.jpeg?_gl=1*15eh1oj*_ga*OTc1MTAxNjk1LjE3NTk4MzA1MTY.*_ga_8JE65Q40S6*czE3NjMyNDQ1NDIkbzE0JGcxJHQxNzYzMjQ0ODMzJGo1OSRsMCRoMA..',
             alt: 'Database visualization',
         },
         'item-2': {
-            image: '/music.png',
+            image: 'https://images.pexels.com/photos/10126663/pexels-photo-10126663.jpeg?_gl=1*9nu9af*_ga*OTc1MTAxNjk1LjE3NTk4MzA1MTY.*_ga_8JE65Q40S6*czE3NjMyNDQ1NDIkbzE0JGcxJHQxNzYzMjQ1MTk3JGoxNyRsMCRoMA..',
             alt: 'Security authentication',
         },
         'item-3': {
-            image: '/mail2.png',
+            image: 'https://images.pexels.com/photos/17029941/pexels-photo-17029941.jpeg?_gl=1*c9n3tl*_ga*OTc1MTAxNjk1LjE3NTk4MzA1MTY.*_ga_8JE65Q40S6*czE3NjMyNDQ1NDIkbzE0JGcxJHQxNzYzMjQ0OTk0JGo2MCRsMCRoMA..',
             alt: 'Identity management',
         },
         'item-4': {
-            image: '/payments.png',
+            image: 'https://images.pexels.com/photos/30112421/pexels-photo-30112421.jpeg?_gl=1*tdihy3*_ga*OTc1MTAxNjk1LjE3NTk4MzA1MTY.*_ga_8JE65Q40S6*czE3NjMyNDQ1NDIkbzE0JGcxJHQxNzYzMjQ1MjYxJGoyMiRsMCRoMA..',
             alt: 'Analytics dashboard',
         },
     }
@@ -34,8 +34,8 @@ export default function Services() {
             <div className="bg-linear-to-b absolute inset-0 -z-10 sm:inset-6 sm:rounded-b-3xl dark:block dark:to-[color-mix(in_oklab,var(--color-zinc-900)_75%,var(--color-background))]"></div>
             <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16 lg:space-y-20 dark:[--color-border:color-mix(in_oklab,var(--color-white)_10%,transparent)]">
                 <div className="relative z-10 mx-auto max-w-2xl space-y-6 text-center">
-                    <h2 className="text-balance text-4xl font-semibold lg:text-6xl">What are we doing?</h2>
-                    <p>Lyra is evolving to be more than just the models. It supports an entire to the APIs and platforms helping developers and businesses innovate.</p>
+                    <h2 className="text-balance text-4xl font-semibold lg:text-6xl">Where Art Meets Automotive</h2>
+                    <p>This is where the magic happens. We don&apos;t just clean cars; we restore and protect them. Explore our core specialties that set us apart from the rest.</p>
                 </div>
 
                 <div className="grid gap-12 sm:px-12 md:grid-cols-2 lg:gap-20 lg:px-0">
@@ -47,38 +47,38 @@ export default function Services() {
                         <AccordionItem value="item-1">
                             <AccordionTrigger>
                                 <div className="flex items-center gap-2 text-base">
-                                    <Database className="size-4" />
-                                    Database Visualization
+                                    <PaintBucket className="size-4" />
+                                    Paint Correction Mastery
                                 </div>
                             </AccordionTrigger>
-                            <AccordionContent>Lyra is evolving to be more than just the models. It supports an entire to the APIs and platforms helping developers and businesses innovate.</AccordionContent>
+                            <AccordionContent>Achieving flawless, mirror-like finishes on even the most delicate paints.</AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-2">
                             <AccordionTrigger>
                                 <div className="flex items-center gap-2 text-base">
-                                    <Fingerprint className="size-4" />
-                                    Advanced Authentication
+                                    <Amphora className="size-4" />
+                                    Ceramic Coating Expertise
                                 </div>
                             </AccordionTrigger>
-                            <AccordionContent>Lyra is evolving to be more than just the models. It supports an entire to the APIs and platforms helping developers and businesses innovate.</AccordionContent>
+                            <AccordionContent>Applying advanced nano-ceramic coatings for years of protection.</AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-3">
                             <AccordionTrigger>
                                 <div className="flex items-center gap-2 text-base">
-                                    <IdCard className="size-4" />
-                                    Identity Management
+                                    <Eye className="size-4" />
+                                    Interior Revival
                                 </div>
                             </AccordionTrigger>
-                            <AccordionContent>Lyra is evolving to be more than just the models. It supports an entire to the APIs and platforms helping developers and businesses innovate.</AccordionContent>
+                            <AccordionContent>Transforming worn-out interiors into like-new condition.</AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-4">
                             <AccordionTrigger>
                                 <div className="flex items-center gap-2 text-base">
-                                    <ChartBarIncreasingIcon className="size-4" />
-                                    Analytics Dashboard
+                                    <Lightbulb className="size-4" />
+                                    Headlight Restoration
                                 </div>
                             </AccordionTrigger>
-                            <AccordionContent>Lyra is evolving to be more than just the models. It supports an entire to the APIs and platforms helping developers and businesses innovate.</AccordionContent>
+                            <AccordionContent>Restoring cloudy headlights to like-new clarity and performance.</AccordionContent>
                         </AccordionItem>
                     </Accordion>
 
