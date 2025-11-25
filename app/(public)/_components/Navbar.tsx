@@ -3,7 +3,7 @@
 import { authClient } from "@/lib/auth-client";
 import { Logo } from "@/components/logo";
 import { buttonVariants } from "@/components/ui/button";
-import Userdropdown from "./Userdropdown";
+import Userdropdown from "@/app/(public)/_components/Userdropdown";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import React from "react";

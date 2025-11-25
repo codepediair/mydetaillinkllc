@@ -16,7 +16,7 @@ import { useState } from "react";
 import { Loader2, Key } from "lucide-react";
 import { signIn } from "@/lib/auth-client";
 import Link from "next/link";
-// import toast from "sonner";
+import { toast } from "sonner";
 import { redirect } from "next/navigation";
 
 export default function SignIn() {
@@ -96,8 +96,8 @@ export default function SignIn() {
                     redirect("/admin");
                   },
                   onError: (ctx) => {
-                    // toast.error(ctx.error.message);
-                    console.log(ctx.error.message);
+                    toast.error(ctx.error.message);
+                    // console.log(ctx.error.message);
                   },
                 },
               );

@@ -1,3 +1,7 @@
+import TaskPage from "@/components/tasks/page";
+
 export default function Page() {
-  return <h1>DashBoard</h1>;
+  return(
+    <TaskPage/>
+  );
 }

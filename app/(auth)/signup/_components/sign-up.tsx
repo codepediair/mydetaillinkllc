@@ -15,7 +15,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Loader2, X } from "lucide-react";
 import { signUp } from "@/lib/auth-client";
-// import { toast } from "sonner";
+import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 
 export default function SignUp() {
@@ -164,7 +164,7 @@ export default function SignUp() {
                     setLoading(true);
                   },
                   onError: (ctx) => {
-                    // toast.error(ctx.error.message);
+                    toast.error(ctx.error.message);
                     // console.log(ctx.error.message);
                   },
                   onSuccess: async () => {
