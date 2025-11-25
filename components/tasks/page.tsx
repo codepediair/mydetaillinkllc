@@ -6,7 +6,6 @@ import { columns } from "./components/columns";
 import { DataTable } from "./components/data-table";
 import { UserNav } from "./components/user-nav";
 import { taskSchema } from "../../db/tasks/data/schema";
-import Userdropdown from "../../app/(public)/_components/Userdropdown";
 
 async function getTasks() {
   const data = await fs.readFile(path.join(process.cwd(), "./db/tasks/data/tasks.json"));

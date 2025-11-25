@@ -14,7 +14,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import { authClient } from "@/lib/auth-client";
-import Link from "next/link";
 import { useSignOut } from "@/hooks/use-signout";
 
 export function UserNav() {
