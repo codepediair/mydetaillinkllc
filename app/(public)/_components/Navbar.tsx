@@ -1,7 +1,7 @@
 "use client";
 
 import { authClient } from "@/lib/auth-client";
-import { Logo } from "@/components/logo";
+import { LogoDark } from "@/components/logo";
 import { buttonVariants } from "@/components/ui/button";
 import Userdropdown from "@/app/(public)/_components/Userdropdown";
 import { Menu, X } from "lucide-react";
@@ -22,7 +22,7 @@ export default function Navbar() {
     <header>
       <nav
         data-state={menuState && "active"}
-        className="fixed z-20 w-full border-b border-dashed bg-white backdrop-blur md:relative dark:bg-zinc-950/50 lg:dark:bg-transparent"
+        className="fixed z-20 w-full border-b border-dashed bg-[#1d1d1d] backdrop-blur md:relative dark:bg-zinc-950/50 lg:dark:bg-transparent"
       >
         <div className="m-auto max-w-5xl px-6">
           <div className="flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
@@ -32,7 +32,7 @@ export default function Navbar() {
                 aria-label="home"
                 className="flex items-center space-x-2"
               >
-                <Logo />
+                <LogoDark />
               </Link>
 
               <button
@@ -52,7 +52,7 @@ export default function Navbar() {
                     <li key={index}>
                       <Link
                         href={item.href}
-                        className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                        className="text-white hover:text-muted-foreground block duration-150"
                       >
                         <span>{item.name}</span>
                       </Link>
